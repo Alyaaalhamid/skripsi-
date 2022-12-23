@@ -52,7 +52,10 @@ class _splashscreen extends State<splashscreen> {
     return Timer(duration, () {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => Login()),
+        MaterialPageRoute(
+            builder: (context) => homepage(
+                  username: '',
+                )),
       );
     });
   }
